@@ -42,7 +42,7 @@ public class SimpleCalc {
         }
         return answer;
     }
-public void printOutput(double answer){
-    System.out.println("Answer = "+answer);//printing answer
+    public void printOutput(double answer){
+        System.out.println("Answer = "+answer);//printing answer
     }
 }

@@ -1,7 +1,6 @@
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         SimpleCalc obj = new SimpleCalc();//Creating object for class
         //Calling all methods
        int n = obj.getOperands();
