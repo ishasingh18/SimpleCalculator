@@ -1,49 +1,59 @@
 import java.util.*;
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        double x=0;
-        double y=0;
-        Calculator obj = new Calculator(); //creating object of class
-        System.out.println("Choose an operation"); //creating menu
-        System.out.println("1.Add");
-        System.out.println("2.Subtract");
-        System.out.println("3.Multiply");
-        System.out.println("4.Divide");
-        int n=sc.nextInt(); //taking option from user
-        if(n<1 || n>4){
-            System.out.println("Invalid input!! Please try again");
-            System.exit(0);
-        }
-        else{
-            System.out.println("Enter 2 numbers");
-             x=sc.nextDouble();
-             y=sc.nextDouble();
-        }
+import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 
-        switch(n){
-            case 1:{
-                System.out.println("Answer = "+ obj.add(x,y)); //method call
-                break;
+public class Main {
+    public static void main(String[] args) throws ClassNotFoundException { //handling error if class cannot be found
+        Scanner sc = new Scanner(System.in);
+        double x=0.0;
+        double y=0.0;
+        Calculator obj = new Calculator(); // Creating Calculator object
+        Class<?> clazz = Class.forName("Calculator"); // dynamically loading class
+        System.out.println("Choose an operation"); //menu-driven calculator
+        System.out.println("1. Add");
+        System.out.println("2. Subtract");
+        System.out.println("3. Multiply");
+        System.out.println("4. Divide");
+        System.out.println("5. Class Analysis");
+
+        try {
+            int n = sc.nextInt(); // reading user input
+
+            if (n >= 1 && n <= 4) {
+                System.out.println("Enter 2 numbers:");
+                x = sc.nextDouble();
+                y = sc.nextDouble();
             }
-            case 2:{
-                System.out.println("Answer = "+ obj.subtract(x,y));
-                break;
-            }
-            case 3:{
-                System.out.println("Answer = "+ obj.multiply(x,y));
-                break;
-            }
-            case 4:{
-                if(y==0){
-                    System.out.println("Can't divide by 0!");
-                    System.exit(0);
+
+            switch (n) {
+                case 1 -> System.out.println("Answer = " + obj.add(x, y));//method call
+                case 2 -> System.out.println("Answer = " + obj.subtract(x, y));
+                case 3 -> System.out.println("Answer = " + obj.multiply(x, y));
+                case 4 -> {
+                    if (y == 0) {//handling division by 0
+                        System.out.println("Cannot divide by zero!");
+                    } else {
+                        System.out.println("Answer = " + obj.divide(x, y));
+                    }
                 }
-                else{
-                    System.out.println("Answer = "+ obj.divide(x,y));
+                case 5 -> {
+                    System.out.println("Class Analysis:");
+                    for (Method method : clazz.getDeclaredMethods()) {//getting all declared methods
+                        System.out.println("Method: " + method.getName());
+
+
+                        for (Parameter param : method.getParameters()) {//getting all declared parameters
+                            System.out.println("  Parameter type: " + param.getType().getSimpleName());
+                        }
+
+                        //printing their return type
+                        System.out.println("Return type: " + method.getReturnType().getSimpleName());
+                    }
                 }
-                break;
+                default -> System.out.println("Invalid input! Please try again.");
             }
+        } catch (InputMismatchException e) {//handling error is user inputs invalid option
+            System.out.println("Invalid input! Please enter valid choice.");
         }
-   }
+    }
 }
