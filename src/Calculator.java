@@ -1,18 +1,18 @@
 public class Calculator {
-    public int add(int a, int b) { //method to add numbers
-        int ans = a + b;
+    public double add(double a, double b) { //method to add numbers
+        double ans = a + b;
         return ans;//returning output
     }
-    public int subtract(int a,int b){ //method to subtract numbers
-        int ans = a - b;
+    public double subtract(double a,double b){ //method to subtract numbers
+        double ans = a - b;
         return ans;
     }
-    public int multiply(int a, int b){ //method to multiply numbers
-        int ans = a * b;
+    public double multiply(double a, double b){ //method to multiply numbers
+        double ans = a * b;
         return ans;
     }
-    public int divide(int a, int b){ //method to divide numbers
-        int ans = a / b;
+    public double divide(double a, double b){ //method to divide numbers
+        double ans = a / b;
         return ans;
     }
 }

@@ -2,8 +2,8 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int x=0;
-        int y=0;
+        double x=0;
+        double y=0;
         Calculator obj = new Calculator(); //creating object of class
         System.out.println("Choose an operation"); //creating menu
         System.out.println("1.Add");
@@ -17,8 +17,8 @@ public class Main {
         }
         else{
             System.out.println("Enter 2 numbers");
-             x=sc.nextInt();
-             y=sc.nextInt();
+             x=sc.nextDouble();
+             y=sc.nextDouble();
         }
 
         switch(n){
