@@ -48,5 +48,42 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/javaparser-master" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/.mvn/wrapper" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-generators/src/main/java" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-generators/src/test/java" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-generators/src/test/resources/com/github/javaparser/generator/core/quality/NotNullGeneratorTest/expected" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-generators/src/test/resources/com/github/javaparser/generator/core/quality/NotNullGeneratorTest/original" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-metamodel-generator/src/main/java" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-serialization/src/main/java" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-serialization/src/test/java" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-testing-bdd/src/test/java" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-testing-bdd/src/test/resources/com/github/javaparser/samples" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-testing/src/test/java" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-testing/src/test/resources" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core-testing/src/test/test_sourcecode" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core/src/main/java" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core/src/main/java-templates" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-core/src/main/javacc-support" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-core/src/main/java" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-testing/src/test/java" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-testing/src/test/resources" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-testing/src/test/resources/enums" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-testing/src/test/resources/issue113" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-testing/src/test/resources/issue128" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-testing/src/test/resources/issue144" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-testing/src/test/test_sourcecode/javaparser_new_src/javaparser-core" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-testing/src/test/test_sourcecode/javaparser_new_src/javaparser-generated-sources" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-testing/src/test/test_sourcecode/javaparser_src/generated" />
+          <root url="file://$MODULE_DIR$/javaparser-master/javaparser-master/javaparser-symbol-solver-testing/src/test/test_sourcecode/javaparser_src/proper_source" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

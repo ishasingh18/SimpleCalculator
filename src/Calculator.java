@@ -1,3 +1,4 @@
+//This is my Calculator code. It contains the basic operations for a calculator
 public class Calculator {
     public double add(double a, double b) { //method to add numbers
         double ans = a + b;

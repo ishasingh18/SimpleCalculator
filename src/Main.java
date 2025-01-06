@@ -1,3 +1,4 @@
+//This is the main method of my SimpleCalculator.
 import java.util.*;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
@@ -40,7 +41,6 @@ public class Main {
                     System.out.println("Class Analysis:");
                     for (Method method : clazz.getDeclaredMethods()) {//getting all declared methods
                         System.out.println("Method: " + method.getName());
-
 
                         for (Parameter param : method.getParameters()) {//getting all declared parameters
                             System.out.println("  Parameter type: " + param.getType().getSimpleName());
