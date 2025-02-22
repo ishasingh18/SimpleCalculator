@@ -31,17 +31,25 @@ public class StringManipulator {
         return newsent;
 
     }
-   /* public int Frequency(String sent, String str){
-        StringTokenizer st = new StringTokenizer(str);
+    public int Frequency(String sent, String str){
+        StringTokenizer st = new StringTokenizer(sent);
         int count = 0;
-
+        boolean temp = false;
         while(st.hasMoreTokens()){
             String word = st.nextToken();
-            if(str.equals(word)){
+            if(str.equals(word)) {
                 count++;
+                temp = true;
+
             }
+        }
+        if(!temp){
+            System.out.println("The word you entered doesn't exist in the sentence!");
+            System.out.println("Please try again.");
+            System.exit(0);
 
         }
+        return count;
     }
-*/
+
 }
