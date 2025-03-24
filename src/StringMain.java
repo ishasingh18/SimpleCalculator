@@ -6,8 +6,8 @@ public class StringMain {
         StringManipulator obj = new StringManipulator();
         while (true) {
             System.out.println("Choose a String operation you want to perform:");
-            System.out.println("1. Reverse a sentence");
-            System.out.println("2. Replace a word in a sentence");
+            System.out.println("1. Palindrome String");
+            System.out.println("2. Anagram String");
             System.out.println("3. Count word frequency in a sentence");
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
@@ -19,17 +19,13 @@ public class StringMain {
                 case 1:
                     System.out.println("Enter a sentence:");
                     String s1 = sc.nextLine();
-                    System.out.println("Reversed sentence: " + obj.ReverseWord(s1));
+                    System.out.println("Palindromes are = " + obj.findPalindromes(s1));
                     break;
 
                 case 2:
                     System.out.println("Enter a sentence:");
                     String s2 = sc.nextLine();
-                    System.out.println("Enter the word you want to replace:");
-                    String orgWord = sc.next();
-                    System.out.println("Enter the new word:");
-                    String newWord = sc.next();
-                    System.out.println("New sentence: " + obj.ReplaceWord(s2, orgWord, newWord));
+                    System.out.println("Anagram pairs are = " + obj.findAnagrams(s2));
                     break;
 
                 case 3:
